@@ -1,8 +1,1 @@
-# elementui
-
-# BEM风格
-
-块 元素 修饰符
-block
-element
-modifier
+# 学习编写element组件
