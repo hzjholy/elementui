@@ -1,0 +1,43 @@
+@import "./config.scss";
+
+// scss List [a,b,c] (a,b,c) map {} (a,'cc') 
+// @each $item in $list
+// @each $key , $value in map
+
+@mixin b($block) {
+    $B: $namespace + '-' + $block;
+
+    @at-root {
+        .#{$B} {
+            @content;
+        }
+    }
+}
+
+@mixin m($modifier) {
+    // &--flex
+    $selector: &;
+    $currentSelector: '';
+
+    @each $unit in $modifier {
+        // '' + '&' + '--' + 'flex' + ','  == &--flex, &--black
+        $currentSelector: $currentSelector + $selector + $modifier-separator + $unit + ",";
+    }
+
+    @at-root {
+        #{$currentSelector} {
+            @content;
+        }
+    }
+}
+
+@mixin when($state) {
+    $selector: &;
+    $currentState: $selector + '.' + $state-prefix + $state;
+
+    @at-root {
+        #{$currentState} {
+            @content;
+        }
+    }
+}
