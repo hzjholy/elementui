@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import App from './App.vue';
+import "@/plugins/element";
 
-import '@/assets/theme-chalk/display.scss';
 
 Vue.config.productionTip = false;
 
