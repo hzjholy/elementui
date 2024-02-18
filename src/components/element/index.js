@@ -1,9 +1,19 @@
 import Row from "@element/row";
 import Col from "@element/col";
+import Container from "@element/container";
+import Main from "@element/main";
+import Header from "@element/header";
+import Footer from "@element/footer";
+import Aside from "@element/aside";
 
 const components = [
     Row,
-    Col
+    Col,
+    Container,
+    Main,
+    Header,
+    Footer,
+    Aside
 ]
 
 const install = (Vue) => {
@@ -18,7 +28,12 @@ const install = (Vue) => {
 export default {
     install,
     Row,
-    Col
+    Col,
+    Container,
+    Main,
+    Header,
+    Footer,
+    Aside
 }
 
 // 按需导出
@@ -26,5 +41,10 @@ export default {
 export {
     install,
     Row,
-    Col
+    Col,
+    Container,
+    Main,
+    Header,
+    Footer,
+    Aside
 }
