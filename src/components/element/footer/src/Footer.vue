@@ -1,11 +1,17 @@
 <template>
-    <div class="el-footer">
-        <slot></slot>
-    </div>
+  <div class="el-footer" :style="{ height }">
+    <slot></slot>
+  </div>
 </template>
 
 <script>
 export default {
-    name: "ElFooter"
-}
+  name: "ElFooter",
+  props: {
+    height: {
+      type: String,
+      default: "60px",
+    },
+  },
+};
 </script>

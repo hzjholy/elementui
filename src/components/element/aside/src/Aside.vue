@@ -1,11 +1,17 @@
 <template>
-    <div class="el-aside">
-        <slot></slot>
-    </div>
+  <div class="el-aside" :style="{ width }">
+    <slot></slot>
+  </div>
 </template>
 
 <script>
 export default {
-    name: "ElAside"
-}
+  name: "ElAside",
+  props: {
+    width: {
+      type: String,
+      default: "300px",
+    },
+  },
+};
 </script>

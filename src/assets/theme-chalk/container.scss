@@ -2,8 +2,10 @@
 
 
 @include b(container) {
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
+    flex: 1;
 
     @include when(vertical) {
         flex-direction: column;
