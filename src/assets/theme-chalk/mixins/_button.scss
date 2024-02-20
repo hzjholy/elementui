@@ -34,8 +34,8 @@
   }
 
   &:active {
-    background-color: mix($--color-black, $color, 10%);
-    border-color: mix($--color-black, $color, 10%);
+    background-color: mix($--color-black, $color, $--button-active-shade-percent);
+    border-color: mix($--color-black, $color, $--button-active-shade-percent);
     color: $--color-white;
   }
 }

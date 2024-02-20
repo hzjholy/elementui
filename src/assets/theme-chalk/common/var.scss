@@ -70,6 +70,12 @@ $--border-shadow-light: 0 2px 12px 0 rgba(0, 0, 0, 0.1) !default;
 
 /* Button Point
 ----------------------*/
+$--button-padding-vertical: 12px !default;
+$--button-padding-horizontal: 20px !default;
+$--button-font-size: $--font-size-base !default;
+$--button-font-weight: $--font-weight-primary !default;
+$--button-border-radius: $--border-radius-base !default;
+
 $--button-default-background-color: $--color-white !default; // #fff
 $--button-default-border-color: $--border-color-base !default; // #dcdfe6
 $--button-default-font-color: $--color-text-regular !default; // #606266
@@ -94,11 +100,8 @@ $--button-danger-background-color: $--color-danger !default; // #f56c6c
 $--button-danger-border-color: $--color-danger !default; // #f56c6c
 $--button-danger-font-color: $--color-white !default; // #fff
 
-$--button-font-weight: $--font-weight-primary !default;
-$--button-font-size: $--font-size-base !default;
-$--button-border-radius: $--border-radius-base !default;
-$--button-padding-vertical: 12px !default;
-$--button-padding-horizontal: 20px !default;
+$--button-active-shade-percent: 10% !default;
+$--button-hover-tint-percent: 20% !default;
 
 /* Break Point
 ----------------------*/
