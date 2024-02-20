@@ -1,17 +1,23 @@
 @mixin utils-clearfix {
-    $selector: &;
+  $selector: &;
 
-    @at-root {
-
-        #{$selector}::after,
-        #{$selector}::before {
-            display: block;
-            content: '';
-        }
-
-        #{$selector}::after {
-            clear: both;
-        }
+  @at-root {
+    #{$selector}::after,
+    #{$selector}::before {
+      display: block;
+      content: "";
     }
 
+    #{$selector}::after {
+      clear: both;
+    }
+  }
+}
+
+@mixin utils-user-select($value) {
+  // 设置不能被选中
+  user-select: $value;
+  -moz-user-select: $value;
+  -webkit-user-select: $value;
+  -ms-user-select: $value;
 }
