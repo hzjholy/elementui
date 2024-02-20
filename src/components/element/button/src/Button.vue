@@ -1,7 +1,8 @@
 <template>
-  <button 
-    class="el-button" 
-    :class="[type ? `el-button--${type}` : '']">
+  <button
+    class="el-button"
+    :class="[type ? `el-button--${type}` : '', plain ? 'is-plain' : '']"
+  >
     <slot />
   </button>
 </template>
@@ -11,6 +12,7 @@ export default {
   name: "ElButton",
   props: {
     type: String,
+    plain: Boolean,
   },
 };
 </script>

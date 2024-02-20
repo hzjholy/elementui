@@ -38,6 +38,18 @@
     border-color: #3a8ee6;
   }
 
+  @include when(plain) {
+    &:hover {
+      background: $--color-white;
+      border-color: $--color-primary;
+      color: $--color-primary;
+    }
+    &:active {
+      border-color: mix($--color-black, $--color-primary, 10%);
+      color: mix($--color-black, $--color-primary, 10%);
+    }
+  }
+
   @include m(primary) {
     @include button-variant(
       $--button-primary-background-color,
@@ -68,6 +80,7 @@
       $--button-warning-border-color,
       $--button-warning-font-color
     );
+   
   }
 
   @include m(danger) {
@@ -76,5 +89,6 @@
       $--button-danger-border-color,
       $--button-danger-font-color
     );
+    
   }
 }
