@@ -6,6 +6,7 @@ import Header from "@element/header";
 import Footer from "@element/footer";
 import Aside from "@element/aside";
 import Icon from "@element/icon";
+import Button from "@element/button";
 
 const components = [
     Row,
@@ -15,7 +16,8 @@ const components = [
     Header,
     Footer,
     Aside,
-    Icon
+    Icon,
+    Button
 ]
 
 const install = (Vue) => {
@@ -36,7 +38,8 @@ export default {
     Header,
     Footer,
     Aside,
-    Icon
+    Icon,
+    Button
 }
 
 // 按需导出
@@ -50,5 +53,6 @@ export {
     Header,
     Footer,
     Aside,
-    Icon
+    Icon,
+    Button
 }
