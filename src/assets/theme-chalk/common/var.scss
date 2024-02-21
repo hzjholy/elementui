@@ -13,7 +13,11 @@ $--main-padding: 0 20px !important;
 $--color-primary: #409eff !default;
 $--color-white: #ffffff !default;
 $--color-black: #000000 !default;
-$--color-primary-light-1: mix($--color-white, $--color-primary, 10%) !default;
+$--color-primary-light-1: mix(
+  $--color-white,
+  $--color-primary,
+  10%
+) !default; // #66beff
 $--color-primary-light-2: mix($--color-white, $--color-primary, 20%) !default;
 $--color-primary-light-3: mix($--color-white, $--color-primary, 30%) !default;
 $--color-primary-light-4: mix($--color-white, $--color-primary, 40%) !default;
@@ -75,6 +79,21 @@ $--button-padding-horizontal: 20px !default;
 $--button-font-size: $--font-size-base !default;
 $--button-font-weight: $--font-weight-primary !default;
 $--button-border-radius: $--border-radius-base !default;
+
+$--button-medium-padding-vertical: 10px !default;
+$--button-medium-padding-horizontal: 20px !default;
+$--button-medium-font-size: $--font-size-base !default;
+$--button-medium-border-radius: $--border-radius-base !default;
+
+$--button-small-padding-vertical: 9px !default;
+$--button-small-padding-horizontal: 15px !default;
+$--button-small-font-size: $--font-size-extra-small !default;
+$--button-small-border-radius: #{$--border-radius-base - 1} !default;
+
+$--button-mini-padding-vertical: 7px !default;
+$--button-mini-padding-horizontal: 15px !default;
+$--button-mini-font-size: $--font-size-extra-small !default;
+$--button-mini-border-radius: #{$--border-radius-base - 1} !default;
 
 $--button-default-background-color: $--color-white !default; // #fff
 $--button-default-border-color: $--border-color-base !default; // #dcdfe6
