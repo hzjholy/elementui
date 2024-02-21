@@ -103,6 +103,10 @@ $--button-danger-font-color: $--color-white !default; // #fff
 $--button-active-shade-percent: 10% !default;
 $--button-hover-tint-percent: 20% !default;
 
+$--button-disabled-background-color: $--color-white !default;
+$--button-disabled-border-color: $--border-color-lighter !default;
+$--button-disabled-font-color: $--color-text-placeholder !default;
+
 /* Break Point
 ----------------------*/
 $--sm: 768px !default;

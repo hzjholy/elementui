@@ -7,6 +7,8 @@
   cursor: pointer;
   outline: 0;
   margin: 0;
+  transition-duration: 0.1s;
+  line-height: 1; // 解决椭圆的形状
 
   border: $--border-base;
   background-color: $--button-default-background-color;
@@ -17,8 +19,6 @@
   font-size: $--button-font-size;
   font-weight: $--button-font-weight;
   border-radius: $--button-border-radius;
-
-  transition-duration: 0.1s;
 
   // 设置不能被选中
   @include utils-user-select(none);
@@ -47,6 +47,27 @@
     &:active {
       border-color: mix($--color-black, $--color-primary, 10%);
       color: mix($--color-black, $--color-primary, 10%);
+    }
+  }
+
+  @include when(round) {
+    border-radius: 20px;
+    padding-left: 23px;
+    padding-right: 23px;
+  }
+
+  @include when(circle) {
+    border-radius: 50%;
+    padding: $--button-padding-vertical;
+  }
+
+  @include when(disabled) {
+    &,
+    &.is-plain {
+      cursor: not-allowed;
+      background-color: $--button-disabled-background-color;
+      border-color: $--button-disabled-border-color;
+      color: $--button-disabled-font-color;
     }
   }
 
@@ -80,7 +101,6 @@
       $--button-warning-border-color,
       $--button-warning-font-color
     );
-   
   }
 
   @include m(danger) {
@@ -89,6 +109,5 @@
       $--button-danger-border-color,
       $--button-danger-font-color
     );
-    
   }
 }
