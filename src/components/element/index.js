@@ -7,6 +7,8 @@ import Footer from "@element/footer";
 import Aside from "@element/aside";
 import Icon from "@element/icon";
 import Button from "@element/button";
+import ButtonGroup from "@element/button-group";
+
 
 const components = [
     Row,
@@ -17,7 +19,8 @@ const components = [
     Footer,
     Aside,
     Icon,
-    Button
+    Button,
+    ButtonGroup
 ]
 
 const install = (Vue) => {
@@ -39,7 +42,8 @@ export default {
     Footer,
     Aside,
     Icon,
-    Button
+    Button,
+    ButtonGroup
 }
 
 // 按需导出
@@ -54,5 +58,6 @@ export {
     Footer,
     Aside,
     Icon,
-    Button
+    Button,
+    ButtonGroup
 }
