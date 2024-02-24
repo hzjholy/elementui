@@ -5,7 +5,8 @@
   background-color: $backgroundColor;
   border-color: $borderColor;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: mix($--color-white, $backgroundColor, 20%);
     border-color: mix($--color-white, $borderColor, 20%);
     color: $fontColor;
@@ -33,7 +34,8 @@
   border-color: mix($--color-white, $color, 60%);
   color: $color;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $color;
     border-color: $color;
     color: $--color-white;

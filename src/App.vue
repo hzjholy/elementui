@@ -105,7 +105,7 @@
       ></el-button>
     </el-row> -->
 
-    <el-button-group>
+    <!-- <el-button-group>
       <el-button type="primary" icon="el-icon-arrow-left">上一页</el-button>
       <el-button type="primary"
         >下一页<i class="el-icon-arrow-right el-icon--right"></i
@@ -124,7 +124,13 @@
     </el-button-group>
     <el-button-group>
       <el-button type="primary" icon="el-icon-edit" circle></el-button>
-    </el-button-group>
+    </el-button-group> -->
+
+    <el-button type="primary" autofocus>主要按钮</el-button>
+    <el-button type="primary" @click="handleClick" nativeType="submit"
+      >主要按钮</el-button
+    >
+    <el-button type="primary" nativeType="reset">主要按钮</el-button>
   </div>
 </template>
 
@@ -132,6 +138,11 @@
 export default {
   name: "App",
   components: {},
+  methods: {
+    handleClick(e) {
+      console.log("xxx", e);
+    },
+  },
 };
 </script>
 
