@@ -8,6 +8,7 @@ import Aside from "@element/aside";
 import Icon from "@element/icon";
 import Button from "@element/button";
 import ButtonGroup from "@element/button-group";
+import Link from "@element/link";
 
 
 const components = [
@@ -20,7 +21,8 @@ const components = [
     Aside,
     Icon,
     Button,
-    ButtonGroup
+    ButtonGroup,
+    Link
 ]
 
 const install = (Vue) => {
@@ -43,7 +45,8 @@ export default {
     Aside,
     Icon,
     Button,
-    ButtonGroup
+    ButtonGroup,
+    Link
 }
 
 // 按需导出
@@ -59,5 +62,6 @@ export {
     Aside,
     Icon,
     Button,
-    ButtonGroup
+    ButtonGroup,
+    Link
 }
