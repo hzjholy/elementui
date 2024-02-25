@@ -72,6 +72,19 @@ $--border-shadow-base: 0 2px 4px rgba(0, 0, 0, 0.12),
   0 0 6px rgba(0, 0, 0, 0.04) !default;
 $--border-shadow-light: 0 2px 12px 0 rgba(0, 0, 0, 0.1) !default;
 
+/* Link
+----------------------*/
+$--link-font-size: $--font-size-base !default;
+$--link-font-weight: $--font-weight-primary !default;
+$--link-default-font-color: $--color-text-regular !default;
+$--link-active-font-color: $--color-primary !default;
+
+$--link-primary-font-color: $--color-primary !default;
+$--link-success-font-color: $--color-success !default;
+$--link-warning-font-color: $--color-warning !default;
+$--link-danger-font-color: $--color-danger !default;
+$--link-info-font-color: $--color-info !default;
+
 /* Button Point
 ----------------------*/
 $--button-padding-vertical: 12px !default;
